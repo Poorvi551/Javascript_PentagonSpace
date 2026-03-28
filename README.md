@@ -189,7 +189,7 @@ Reserved Words:
     1. Primitive Datatype  - Immutable(Object- Dereferencing) -> number,string,boolean,null,undefined,bigInt
     2. Non Primitive Datatype - Mutable(Object- Referencing) -> functions, arrays(filter,map,reduce), object(date,time,math)
 
-* Variable :-
+Variable :-
 
   * Variable is a named memory location which is used to store some data or value and that can be changed n number of times during execution.
 
