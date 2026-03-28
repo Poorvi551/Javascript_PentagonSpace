@@ -116,5 +116,132 @@ Ways of writing javascript code:
   5. document.writeln() - prints the statement on the browser with one space.
 
 * Tokens - Tokens are the smallest individual unit of javascript program.
+* Keywords are predefined reserved words which have its own meaning.
+* Identifiers - Identifiers are the name given to the javascript program.
+* Literals - Literals are the values used in javascript program.
+
+Reserved Words:
+
+1. Abstract
+2. Boolean
+3. Break
+4. Byte
+5. Case
+6. Catch
+7. Char
+8. Class
+9. Const
+10. Continue
+11. Debugger
+12. Default
+13. Delete
+14. Do
+15. Double
+16. Else
+17. Enum
+18. Export
+19. Extends
+20. False
+21. Final
+22. Finally
+23. Float
+24. For
+25. Function
+26. Goto
+27. If
+28. implements
+29. Import
+30. In
+31. Instanceof
+32. Int
+33. Interface
+34. Long
+35. Native
+36. New
+37. Null
+38. Package
+39. Private
+40. Protected
+41. Public
+42. Return
+43. Short
+44. Static
+45. Super
+46. Switch
+47. Synchronized
+48. This
+49. Throw
+50. Throws
+51. Transient
+52. True
+53. Try
+54. Typeof
+55. Var
+56. Void
+57. Volatile
+58. While
+59. With
+
+* Literals -
+
+  They are of two types-
+  
+    1. Primitive Datatype  - Immutable(Object- Dereferencing) -> number,string,boolean,null,undefined,bigInt
+    2. Non Primitive Datatype - Mutable(Object- Referencing) -> functions, arrays(filter,map,reduce), object(date,time,math)
+
+* Variable :-
+
+  * Variable is a named memory location which is used to store some data or value and that can be changed n number of times during execution.
+
+  * There are 3 types  of variables :
+
+       1. Var -> global scope
+       2. let   ---\ Function scope, block scope,
+       3. const ---/ script scope, local scope
+
+ * There are 4 operations to be performed :
+
+    1. Declaration
+    2. Declaration and Initialization
+    3. Re-Initialization
+    4. Re-Declaration
+
+ 1. Declaration :
+
+    * var - possible
+    * let - possible
+    * const - not possible
+
+ 2. Declaration and Initialization :
+
+    * var - possible
+    * let - possible
+    * const - possible
+
+ 3. Re-Initialization :
+
+    * var - possible
+    * let - possible
+    * const - not possible
+       
+ 4. Re-Declaration :
+
+    * var - possible
+    * let - not possible
+    * const - not possible
+
+* Hoisting :
+
+* Utilising the variable before the initialization line is called hoisting.
+
+* Ex : console.log(a)
+       var a = 10;
+
+* var -> possible - o/p -> undefined
+* let, const -> Referrence Error -> TDz - Temporal Dead Zone
+
+* Temporal Dead Zone :
+
+   * The time gap between utilization and initialization line is called Temporal Dead Zone.
 
   
