@@ -244,4 +244,101 @@ Variable :-
 
    * The time gap between utilization and initialization line is called Temporal Dead Zone.
 
-  
+GEC Execution :
+
+ * GEC - GEC stands for Global Execution Context.
+ *  Whenever the javascript program is given to javascript Engine a new memory is created that memory is called Global Execution Context(GEC).
+
+* GEC has 2 stages:
+
+   1. Variable phase
+   2. Function/Execution Phase
+* GEC has 2 steps :
+
+  1. Memory is created or allocated.
+  2. Execy=ution happens from top to bottom, left to right and by default all the values are assigned as undefined.
+
+Typecasting :
+
+* Converting one type of data into another type of data is called typecasting.
+
+  * They are of 2 types :
+
+     1. Implicit Typecasting
+     2. Explicit Typecasting
+
+  1. Implicit Typecasting -
+
+     * Converting one type of data into another type of data internally or implicitly is called Implicit typecasting.
+     *  Ex: console.log(1+3);
+
+  2. Explicit Typecasting -
+
+     * Converting one type of data into another type of data externally or explicitly is called Explicit typecasting.
+     * There are 3 in-built methods. They are :
+          1. Number()
+          2. String()
+          3. BigInt()
+
+Inputs :
+
+* Inputs are of 2 types :
+     1. static inputs
+     2. dynamic inputs
+
+  1. Static inputs :
+ 
+      code : ex: var a=10;
+                 var b=20;
+                 console.log(a+b);
+     
+     * EX: source code : Assignment 3 folder in this repo.
+
+  3. Dynamic inputs :
+ 
+      code : ex: var a=prompt("Enter a:");
+                 var b=prompt("Enter b:");
+                 console.log(a+b);  // a-> 10, b-> 20 o/p -> 1020     to overcome this use Number(prompt()) except subtract bcz subtract sign will defaultly convert it into number.
+     
+     * EX: source code : Assignment 3 folder in this repo.
+
+Literals :
+
+1. Primitive :-
+
+    * They are Immutable.
+    * They are object Dereferencing.
+
+  * String Literals:
+
+    * They are Immutable.
+    * They are object Dereferencing.
+
+      1. " " - double quotes
+      2. ' ' - single quotes
+      3. ` ` - Backticks
+            1. Template string
+            2. String Interpolation
+               * Ex : source code - stringliterals.html
+                 
+      * String Methods :
+
+          * Ex : source code - stringliterals.html
+          * str.length - length of string
+          * str.toLowerCase() - converts to lowercase
+          * str.toUpperCase() - converts to uppercase
+          * str.toLocaleLowerCase() - converts to lowercase
+          * str.toLocaleUpperCase() - converts to uppercase
+          * str.charAt(0) - prints letter at the index 0 if the space is not occupied returns blank
+          * str.indexof(H) - prints index of the letter H
+          * str.lastIndexOf(l) - prints from last index of the letter l where it finds the first l
+          * str.slice()- prints the n-1 letter, 2 parameters (strat index, end index)
+          * str.replace("H","R") - replace letter H to R.
+          * str.startsWith("H") - returns boolean val( true/false) if present or not.
+          * str.endsWith("o") - returns boolean val( true/false) if present or not.
+          * str.trim() - removes the space at both start and end sides.
+          * str.trimStart() - removes spcae at start
+          * str.trimEnd() - removes spcae at end
+          * str.concat(str2) - concatenates the 2 strings.
+          * str.split("") - converts whole string to array.
+    
