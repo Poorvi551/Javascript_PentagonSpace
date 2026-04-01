@@ -320,6 +320,8 @@ Literals :
             1. Template string
             2. String Interpolation
                * Ex : source code - stringliterals.html
+   
+       * NOTE - To print the the string with double quotes like("hello") we use '"hello"' - singel quotes, to print with single quotes like('hello') we use "'hello'" and to print with backticks like(`hi`) we can use either single quotes or double quotes("`hi`") or ('`hi`').
                  
       * String Methods :
 
