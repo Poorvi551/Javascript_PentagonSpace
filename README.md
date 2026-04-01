@@ -286,7 +286,7 @@ Inputs :
      1. static inputs
      2. dynamic inputs
 
-  1. Static inputs :
+1. Static inputs :
  
       code : ex: var a=10;
                  var b=20;
@@ -294,7 +294,7 @@ Inputs :
      
      * EX: source code : Assignment 3 folder in this repo.
 
-  3. Dynamic inputs :
+2. Dynamic inputs :
  
       code : ex: var a=prompt("Enter a:");
                  var b=prompt("Enter b:");
