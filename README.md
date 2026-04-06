@@ -256,7 +256,7 @@ GEC Execution :
 * GEC has 2 steps :
 
   1. Memory is created or allocated.
-  2. Execy=ution happens from top to bottom, left to right and by default all the values are assigned as undefined.
+  2. Execution happens from top to bottom, left to right and by default all the values are assigned as undefined.
 
 Typecasting :
 
