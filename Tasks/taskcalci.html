@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #bodycalci{
+            width: 600px;
+            height: 800px;
+            background-color: rgba(50, 5, 11, 0.667);
+            border-radius: 20px;
+        }
+        #inputblock{
+            width: 580px;
+            height:240px;
+        }
+        #operationblock{
+            width: 600px;
+            height: 600px;
+        }
+        td{
+            width: 140px;
+            height: 100px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px rgb(126, 156, 184);
+        }
+        button{
+            width:140px;
+            height:100px;
+            border-radius: 10px;
+            align-content: center;
+            font-size: 25px;
+        }
+        tr:first-child{
+            background-color: #738195;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Calculator</h1>
+        <div id="bodycalci">
+            <div id="inputblock"></div>
+            <div id="operationblock">
+            <table>
+                <tr>
+                    <td><button onclick="percent()">%</button></td>
+                    <td><button onclick="CE()">CE</button></td>
+                    <td><button onclick="C()">C</button></td>
+                    <td><button onclick="div()">/</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="7">7</button></td>
+                    <td><button onclick="8">8</button></td>
+                    <td><button onclick="9">9</button></td>
+                    <td style="color:darkslateblue;"><button onclick="multi()">*</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="4">4</button></td>
+                    <td><button onclick="5">5</button></td>
+                    <td><button onclick="6">6</button></td>
+                    <td style="color:darkslateblue;"><button onclick="sub()">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="1">1</button></td>
+                    <td><button onclick="2">2</button></td>
+                    <td><button onclick="3">3</button></td>
+                    <td style="color:darkslateblue;"><button onclick="add()">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="0">0</button></td>
+                    <td><button onclick=".">.</button></td>
+                    <td><button onclick="DEL">DEL</button></td>
+                    <td style="color:darkslateblue;"><button onclick="=">=</button></td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </center>
+    <script>
+        function add(){
+            var a = Number(prompt("Enter a value:"));
+            var b = Number(prompt("Enter b balue:"));
+            var c = a+b;
+            console.log(c);
+        }
+        function sub(){
+            var a = prompt("Enter a value:");
+            var b = prompt("Enter b balue:");
+            var c= a-b
+            console.log(c);
+        }
+        function multi(){
+            var a = Number(prompt("Enter a value:"));
+            var b = Number(prompt("Enter b balue:"));
+            var c= a*b;
+            console.log(c)
+        }
+        function div(){
+            var a = Number(prompt("Enter a value:"));
+            var b = Number(prompt("Enter b balue:"));
+            var c= a/b;
+            console.log(c)
+        }
+        function percent(){
+            var a = Number(prompt("Enter a value:"));
+            var b = Number(prompt("Enter b balue:"));
+            var c= (a/b)*100;
+            console.log(c)
+        }
+        function CE(){
+            console.log("CE");
+        }
+        function C(){
+            console.log("C");
+        }
+        function DEL(){
+            console.log("DEL");
+        }
+        function equal(){
+            var addresult =add();
+            var subresult =sub();
+            var multiresult =multi();
+            var divresult =div();
+        }
+    </script>
+</body>
+</html>
