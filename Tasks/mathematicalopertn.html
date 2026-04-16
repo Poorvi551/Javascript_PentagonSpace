@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathematical operation</title>
+    <style>
+        h1{
+            color: rgb(96, 212, 112);
+        }
+        label{
+            color: rgb(147, 42, 165);
+            height: 14px;
+        }
+        input{
+            width: 180px;
+            height: 50px;
+            border-radius: 13px;
+            color: cadetblue;
+        }
+        input:hover{
+            border: 2px solid blue;
+        }
+        button{
+            width: 180px;
+            height: 50px;
+            border-radius: 13px;
+            color:crimson;
+            background-color:cornsilk;
+        }
+        button:hover{
+            color:chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>Mathematical operation</h1>
+    <label for="value">Enter a value:</label>
+    <input type="number" placeholder="Enter a value..." id="a">
+    <br><br>
+    <label for="value">Enter b value:</label>
+    <input type="number" placeholder="Enter b value..." id="b">
+    <br><br>
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Subtract</button>
+    <button onclick="multi()">Product</button>
+    <button onclick="div()">Divide</button>
+    </center>
+    <script>
+        function add(){
+            let a=Number(document.getElementById("a").value)
+            let b=Number(document.getElementById("b").value)
+            let sum=a+b
+            console.log(sum)
+        }
+        function sub(){
+            let a=Number(document.getElementById("a").value)
+            let b=Number(document.getElementById("b").value)
+            let sub=a-b
+            console.log(sub)
+        }
+        function multi(){
+            let a=Number(document.getElementById("a").value)
+            let b=Number(document.getElementById("b").value)
+            let mul=a*b
+            console.log(mul)
+        }
+        function div(){
+            let a=Number(document.getElementById("a").value)
+            let b=Number(document.getElementById("b").value)
+            let div=a/b
+            console.log(div)
+        }
+    </script>
+</body>
+</html>
