@@ -576,4 +576,51 @@ Literals :
        console.log(sample())
    
  * Return keyword terminates the function and comes out of the functions
+
+* Function Execution Context (FEC):
+
+* Whenever a new function is called inside a javascript engine it will create a new execution context called as FEC.
+* When a new FEC is created older GEC will go to garbage and the memory address of that GEC will be stored in a temporary memory called as closure.
+
+* Closure : Closure is a temporary memory which is used to store some data and memory address for execution.
+
+* Nested Function (Contd-):
+
+ * Function inside another function is called Nested function.
+ * Ex:
+
+       function one(){
+         var a =10;
+         console.log(a);
+         function two(){
+           var b=20;
+           console.log(b);
+         }
+         return two;
+       }
+       one()();
+
+* Lexical Scope :
+
+* The ability of javascript engine to search for a variable outer scope or global scope if the variable is not present in the local scope is called as lexical scope.
+
+Arrays:
+
+ * Array is a collection of homogeneous and heterogeneous type of data.
+ * Homogeneous stands for same type of data.
+ * Heterogeneous stands for different type of data.
+ * We can create the array in 2 ways:
+
+    1. Literal Method
+    2. Array Constructor Method(should not use)
+       
+  1. Literal Method :
+
+   * Ex: let colors=["black","pink","orange","green"];
+
+  2. Array Constructor Method(should not use in real time) :
+
+   * Ex: let arr = new Array("black","pink","orange","green");
    
+ 
+    
