@@ -348,16 +348,42 @@ Literals :
      
       * They are Immutable.
       * They are object Dereferencing.
+      * Ex: Source Code -number.html
+           <script>
+             var a=10;
+             var b=10.5;
+             var c=1/0;
+             var d=-1/0;
+             console.log(a);
+             console.log(b);
+             console.log(c);
+             console.log(d);
+             console.log(typeof a);
+             console.log(typeof b);  
+           </script>
           
      iii. Boolean:
 
       * They are Immutable.
       * They are object Dereferencing.
+      * Ex:
+           <script>
+              console.log(Boolean (" "));
+           </script>
         
      iv. BigInt:
 
       * They are Immutable.
       * They are object Dereferencing.
+      * Ex: Sourcecode - BigInt.html
+          <script>
+             let a=1n;
+             let b=BigInt(124437869860483756352)
+             let c=BigInt("080912356789953243456789")
+             console.log(typeof a);
+             console.log(typeof b);
+             console.log(typeof c);
+           </script>
         
      v. Undefined:
 
