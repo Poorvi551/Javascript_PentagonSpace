@@ -309,10 +309,10 @@ Literals :
     * They are Immutable.
     * They are object Dereferencing.
 
-  * String Literals:
+  i. String Literals:
 
-    * They are Immutable.
-    * They are object Dereferencing.
+   * They are Immutable.
+   * They are object Dereferencing.
 
       1. " " - double quotes
       2. ' ' - single quotes
@@ -323,7 +323,7 @@ Literals :
    
        * NOTE - To print the the string with double quotes like("hello") we use '"hello"' - singel quotes, to print with single quotes like('hello') we use "'hello'" and to print with backticks like(`hi`) we can use either single quotes or double quotes("`hi`") or ('`hi`').
                  
-      * String Methods :
+        * String Methods :
 
           * Ex : source code - stringliterals.html
           * str.length - length of string
@@ -343,4 +343,29 @@ Literals :
           * str.trimEnd() - removes spcae at end
           * str.concat(str2) - concatenates the 2 strings.
           * str.split("") - converts whole string to array.
-    
+            
+     ii. Number:
+     
+      * They are Immutable.
+      * They are object Dereferencing.
+          
+     iii. Boolean:
+
+      * They are Immutable.
+      * They are object Dereferencing.
+        
+     iv. BigInt:
+
+      * They are Immutable.
+      * They are object Dereferencing.
+        
+     v. Undefined:
+
+     * They are Immutable.
+     * They are object Dereferencing.
+       
+     vi. Null:
+
+     * They are Immutable.
+     * They are object Dereferencing.
+      
