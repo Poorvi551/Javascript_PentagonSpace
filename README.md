@@ -366,7 +366,7 @@ Literals :
 
       * They are Immutable.
       * They are object Dereferencing.
-      * Ex:
+      * Ex: Source Code- boolean.html
            <script>
               console.log(Boolean (" "));
            </script>
@@ -378,8 +378,8 @@ Literals :
       * Ex: Sourcecode - BigInt.html
           <script>
              let a=1n;
-             let b=BigInt(124437869860483756352)
-             let c=BigInt("080912356789953243456789")
+             let b=BigInt(124437869860483756352);
+             let c=BigInt("080912356789953243456789");
              console.log(typeof a);
              console.log(typeof b);
              console.log(typeof c);
@@ -389,9 +389,117 @@ Literals :
 
      * They are Immutable.
      * They are object Dereferencing.
+     * Ex: Source code - undefined.html
+         <script>
+            var a;
+            console.log(a);
+         </script>
        
      vi. Null:
 
      * They are Immutable.
      * They are object Dereferencing.
+     * In null memory is created/allocated explicitly.
+     * It is a defect in javascript because if check for the typeof a variable gives object (it will consider everything as an object).
+     * Ex: Source code - null.html
+         <script>
+            var a = null;
+            console.log(a);
+            console.log(typeof a);  //object
+         </script>
+
+2. Non Primitive datatype:-
+
+ * It is Mutable.
+ * It is object referencing.
+ * They are of 3 types :
+     1. Functions
+     2. Arrays
+     3. Object
+        
+  1. Functions :
+
+   * Function is a block of statement which is excuted whenever we call or invoke.
+   * Function is a non primitive datatype.
+   * Function is mutable.
+   * Function is object referencing.
+   * There are 10 types of functions :
+       1. Anonymous Function
+       2. Named Function
+       3. Functional Expression
+       4. First class Function
+       5. Arrow Function
+       6. High-order Function
+       7. Call-Back Function
+       8. Nested Function
+       9. Generator Function
+       10. Immediate Invoking Function(IIF)
+           
+  1. Anonymous Function:
+
+   * A function without any name is called as anonymous function.
+   * Directly executing anonymous function is nor possible.
+   * We can convert anonymous function into -> named, functional expression and first-class functions.
+   * Syntax:-
+
+         function()
+         {
+          console.log("Hello");
+         }
+
+  2. Named Function :
+
+   * A function with any name is called as named function.
+   * Syntax:-
+
+         function demo()   // demo is the function name
+         {
+          console.log("Hello");
+         }
+         demo()   //calling function
+     
+  3. Functional Expression :
+
+   * Storing the entire function into a variable is called functional expression.
+   * Syntax:-
+
+         Let x = function ()   // x is the variable name storing the function
+         {
+          console.log("Hello");
+         }
+         x()   //calling function
+
+ 4. First-class Function :
+
+   * The function is passed as a value to a variable is called as a First-class Function.
+   * Syntax:-
+
+         Let x = function ()   // function() is passed as value to variable x this function is called first class function
+         {
+          console.log("Hello");
+         }
+         x()   //calling function
+
+  5. Arrow Function :
+
+   * Arrow function is used to reduce the syntax of a normal function.
+   * Arrow function was introduced in ECMAScript 2015(ES6)
+   * Syntax :
+
+         let x = () =>console.log("Hello");
+         x();
+     
+      or   
+
+         let x = () =>{
+         console.log("Hello");
+         console.log("Hello! Welcome to javascript learnings");
+         }
+         x();
+     
+   * Rules for Arrow function :
+     1. If the function contains more than 1 statement than the curly braces{} is mandatory.
+     2. If return keyword is used than the curly braces{} is mandatory.
+     3. this keyword will work different inside arrow function.
+     4. If there is only one parameter we can remove paranthesis().
       
