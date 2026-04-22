@@ -502,4 +502,78 @@ Literals :
      2. If return keyword is used than the curly braces{} is mandatory.
      3. this keyword will work different inside arrow function.
      4. If there is only one parameter we can remove paranthesis().
-      
+        * Ex:
+
+              let x = () =>{
+              return 1234;
+              }
+              x();
+          
+  6. High-order Function:
+
+   * The function which is accepting another function as a parameter is called higher-order function.
+   * Higher order function is used to perform generic task in an application.
+   * Ex :
+     
+         function reels(auth(),home())
+         {
+
+         }
+
+         function auth()
+         {
+
+         }
+
+         function home()
+         {
+
+         }
+     
+7. Call Back Function :
+
+ * The Function which is passed as a parameter to higher-order function is called as call back function.
+ * Ex :
+     
+         function reels(auth(),home())   // auth() and home() are call back function
+         {
+
+         }
+
+         function auth()
+         {
+
+         }
+
+         function home()
+         {
+
+         }
+   
+ 8. Nested Function : (continued further -)
+
+   * A function inside another function is called nested function.
+
+ 10. Immediate Invoking Function(IIF) :
+
+   * If we want to execute a function immediately we use IIF Function.
+   * Ex:
+
+         (function ()
+         {
+          console.log(144);
+         })
+         ();
+     
+* Return Keyword :
+ 
+ * Return keyword is used to return some value from the function.
+ * Ex:-
+
+       function sample(){
+       return 1234;
+       }
+       console.log(sample())
+   
+ * Return keyword terminates the function and comes out of the functions
+   
