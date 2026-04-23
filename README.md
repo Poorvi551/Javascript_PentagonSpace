@@ -621,6 +621,49 @@ Arrays:
   2. Array Constructor Method(should not use in real time) :
 
    * Ex: let arr = new Array("black","pink","orange","green");
+
+  * Homogeneous :-
+   * Ex: let arr=[10,20,30.40];
+  * Heterogeneous :-
+   * Ex: let arr=[10,null,undefined,"hello",true];
+
+  * Fetching a value from a Array using index :-
    
- 
+   * Ex:
+
+         console.log(arr[1]); //prints value at index 1
+  * Array methods:-
+
+    1. Push - Adding element in the last of array.
+       * Ex:-
+
+             let arr=[10,20,30.40];
+             arr.push(50);   //10,20,30,40,50
+         
+    2. Pop - Removes element in the last of array.
+       * Ex:-
+
+             let arr=[10,20,30.40];
+             arr.pop();   //10,20,30,40
+
+    3. Unshift - Adding element in the last of array.
+       * Ex:-
+
+             let arr=[10,20,30.40];
+             arr.unshift(5);   //5,10,20,30,40
+    4. Shift - Remove element in the first of array.
+       * Ex:-
+
+             let arr=[10,20,30.40];
+             arr.shift();   //10,20,30,40
+
+  * Code to Reverse an array and convert to string :
+
+        let arr = [10,20,30,40,50]
+        console.log(arr.reverse());        // reverse array
+        console.log(arr.join(""));                     // converts to string
+        console.log(arr.indexOf(10));                  // prints indef of value 10
+        console.log(Array.isArray);            // prints boolean values checks whether it is an array or not
+        console.log(arr.slice(0,2));          // part of array
+        console.log(arr.splice(0,2,"hello");  // deletes and replace values in array
     
