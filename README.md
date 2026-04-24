@@ -666,4 +666,252 @@ Arrays:
         console.log(Array.isArray);            // prints boolean values checks whether it is an array or not
         console.log(arr.slice(0,2));          // part of array
         console.log(arr.splice(0,2,"hello");  // deletes and replace values in array
+
+    * for in: fetches index
+
+          for (index in arr){
+             console.log(index);
+          }
+      
+     * for of: fetches value only
+
+           for (values of arr){
+             console.log(values);
+           }
+
+     * for each: fetches both index and values.
+
+           let arr=[10,20,30];
+           arr.forEach(function(val,index){
+             console.log(`${index} is the index of ${val}`);
+           });
+
+    * for each: fetches both index and values(arrow function).
+
+           let arr=[10,20,30];
+           arr.forEach(val,index)=>
+          {
+             console.log(val,index);
+           });
+      
+    * Splice :
+   
+    * Ex:
+
+          let names=["Virat","MSD","Rohit","ABD"];
+          names.splice(2,0,"Baber");   // adds value
+          names.splice(2,1,"Pandya");  //replace value
+          names.splice(1,2);    // deletes value
+
+ * Filter(), Map() and Reduce():-
+
+  * Filter():
+
+   *  Filter is a built in higher order function, it is used to remove unwanted elements from an array.
+   *  Filter will return a new array.
+   *  Inside filter should not use arithmetic operators because we compare values.
+   *  Ex:
+
+          let num=[10,20,30,40,50,60];
+          let result=num.filter((x)=>{
+                       return x>30;
+          })
+          console.log(result);   //40,50,60
+
+ * Map():
+
+  * Map is a built-in higher order function it applies the given function to each and every element in an array[one-to-one mapping].
+  * Transforms each element where we use arithmetic operators.
+  * Ex:
+
+        let num=[1,2,3,4,5];
+        let result=num.map((x)=>{
+                       return x*2;
+          })
+          console.log(result);
     
+ * Reduce():
+
+  * Reduce is a built in higher order function, it takes multiple elements and it reduces it into a single value.
+  * Ex:
+
+        let num=[10,20,30,40,50,60];
+        let result=num.reduce((acc,val)=>{
+                       return acc+val;
+          },0)
+          console.log(result);
+    
+* Array Destructuring:
+
+ * Array Destructuring was introduced in ECMAscript 2015(ES6).
+ * Array Destructuring means unpacking the values from an array and storing it in a separate variable.
+ * Ex:
+
+       let user=["Kanmani",19,"BCOM","Chennai"]
+       let [name,age,dept,city]=user
+       console.log(name);
+       console.log(age);
+       console.log(dept);
+       console.log(city);
+
+ Objects:
+
+ * Object is a real world entity used to store dat in the form of key & value pair.
+ * There are two types to declare an object.
+     1. Literal Method.
+     2. Object Constructor.
+
+ 1. Literal Method:-
+
+   * Ex:
+
+         let user={
+                 name:"Kannu",
+                 age:19,
+                 skills:["Accounts","cooking","Rangoli", "dancing"],
+                 address:{
+                    city:"Chennai",
+                    state:"TN"
+                 }
+         }
+         console.log(user);
+
+ 2. Object constructor:
+
+   * Ex :
+
+          let user=new Object({
+                 name:"Kannu",
+                 age:19,
+                 skills:["Accounts","cooking","Rangoli", "dancing"],
+                 address:{
+                    city:"Chennai",
+                    state:"TN"
+                 }
+         })
+         console.log(user);
+
+ * Accessing object properties :
+
+    1. Dot notation
+    2. Square brackets
+
+   * Ex:
+
+         let user={
+                 name:"Kiran",
+                 age:25,
+                 address:{
+                    city:"Benagluru",
+                    state:"Karnataka"
+                 }
+         }
+         // Dot Notation
+         console.log(user.age);
+         // Square Brackets
+         console.log(user["name"];
+         console.log(user["address"]["state"]);
+     
+  * Modifying the objects:
+
+   * Ex:
+
+          let user={
+                 name:"Yogesh",
+                 dept:"CSE",
+                 course:"PFS",
+         }
+         // adding the property
+         user.gender="Male";
+         console.log(user);
+         // updating
+         user.name="Sunil";
+         user.gender="M";
+         console.log(user);
+         // deletes
+         delete user.dept
+         console.log(user);
+
+ * Object Methods:-
+
+  * Ex:
+
+         let user={
+                 name:"Yogesh",
+                 dept:"CSE",
+                 course:"PFS",
+         }
+         // object methods
+         console.log(Object.keys(user));  //returns array of keys
+         console.log(Object.values(user));  //returns array of values
+         console.log(Object.entries(user));  //returns both array of keys and values
+
+* Object Sealing and Freezing:
+
+  * Both sealing and Freezing means protecting an object.
+
+* Sealing:
+
+ * Whenever the object is sealed we cannot add, delete, but we can update.
+ * Synatx:
+       Object.seal(object_name);
+   
+ * Ex:
+
+       let user={
+                 name:"Yogesh",
+                 dept:"CSE",
+                 course:"PFS",
+         }
+         console.log(user);
+         // object sealing
+         Object.seal(user)
+         // adding
+         user.gender="Male";
+         console.log(user);
+         //updating
+         user.name="Sunil";
+         console.log(user);
+         console.log(Object.isSealed(user))  // returns boolean values
+
+* Freezing :
+
+  * Whenever an object is freezed we cannot modify the object(read-only)or immutable.
+  * Ex:-
+ 
+        let user={
+                 name:"Yogesh",
+                 dept:"CSE",
+                 course:"PFS",
+         }
+         console.log(user);
+         Object.freeze(user);
+        // updating
+         user.dept="Civil";   // updation not possible
+         console.log(user);
+        console.log(Object.isFrozen(user)); // true
+
+ * Object Destructuring:
+
+   *  Object Destructuring means unpacking the values from an array and storing it in a separate variable.
+   * Ex:
+
+         let user={
+                 name:"Yogesh",
+                 dept:"CSE",
+                 course:"PFS",
+         }
+         let {name:Name,dept:Dept,course:Course}=user //removes key values
+         console.log(Name);
+         console.log(Dept);
+         console.log(Course);
+
+ * Web Storage API:
+
+ * Each and every browser provides in built storage to store data upto 10Mb(text,number,letters,etc..)but not images and videos.
+ * There are two types of storages :
+
+    1. Local Storage(P)
+    2. Session Storage(T)
+     
+      
