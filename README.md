@@ -911,7 +911,106 @@ Arrays:
  * Each and every browser provides in built storage to store data upto 10Mb(text,number,letters,etc..)but not images and videos.
  * There are two types of storages :
 
-    1. Local Storage(P)
-    2. Session Storage(T)
+    1. Local Storage(Permanent)
+    2. Session Storage(Temporary) - if web page is closed memoray will be deleted.
+
+ * Local Storage:
+
+  * To store data.
+  * Syntax:
+
+        localStorage.setItem("Key",value);
+
+  * Example:-
+
+        let username="Sunil";
+        let email="sunil@gmail.com";
+        localStorage.setItem("user",username);
+        localStorage.setItem("email",email);
+
+ * To Fetch data:
+
+   * Syntax:
+
+         localStorage.getItem("Key");
+
+   * Example:-
+
+         let username="Sunil";
+         let email="sunil@gmail.com";
+         localStorage.setItem("user",username);
+         localStorage.setItem("email",email);
+         let a=localStorage.getItem("user");
+         let b=localStorage.getItem("email");
+         console.log(a);
+         console.log(b);
+
+* Remove Items:
+
+ * To remove particular data
+
+       localStorage.removeItem("email");
+ * To clear all the data
+
+       localStorage.clear();
+   
+ * Ex:
+
+       localStorage.setItem("user",username);
+       localStorage.setItem("email",email);
+       localStorage.setItem("password",password);
+       localStorage.removeItem("email");
+       localStorage.clear() // removes all the items
+
+2. Session Storage:
+
+  * Ex:
+
+        sessionStorage.setItem("name","yash");
+  * Ex :
+
+        sessionStorage.setItem("user",username);
+        sessionStorage.setItem("email",email);
+        sessionStorage.setItem("password",password);
+        sessionStorage.removeItem("email");
+        sessionStorage.clear() // removes all the items
+
+ DOM (Document Object Model):-
+
+* DOM is a programming interface provided by the browser that allows javascript to interact with HTML and CSS of a web page.
+* Ex:
+
+     <body>
+      <h1 id="head">Kanmani</h1>
+      <script>
+       let head = document.getElementById("head")
+       console.log(typeof head);
+       head.innerText="Patanjali";
+      </script>
+     </body>
+
+BOM (Browser Object Model):-
+
+* BOM allows javascript to interact with browser[outside the page content], like browser windows,location,history etc.
+* BOM Objects:-
+
+  1. Window (Global Object).
+  2. Navigator (Information about browser).
+  3. Screen(Info about screen resolution).
+  4. History (Browser history).
+  5. Location (Info about urls).
+
+* Features of DOM:-
+
+  1.To modify HTML Elements.
+  2. To change styles.
+  3. To add,delete & edit the elements.
+  4. To handle events.
+
+* Note: DOM is inside BOM.
+      
+   
+      
      
+           
       
