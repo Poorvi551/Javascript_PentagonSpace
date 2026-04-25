@@ -980,14 +980,14 @@ Arrays:
 * DOM is a programming interface provided by the browser that allows javascript to interact with HTML and CSS of a web page.
 * Ex:
 
-     <body>
+      <body>
       <h1 id="head">Kanmani</h1>
       <script>
-       let head = document.getElementById("head")
-       console.log(typeof head);
-       head.innerText="Patanjali";
+        let head = document.getElementById("head")
+        console.log(typeof head);
+        head.innerText="Patanjali";
       </script>
-     </body>
+      </body>
 
 BOM (Browser Object Model):-
 
