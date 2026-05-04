@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Door lock </title>
+    <style>
+        table {
+            height: 600px;
+            width: 400px;
+        }
+        tr:first-child{
+            background-color: rgba(165, 42, 42, 0.777);
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1><i>Smart Door</i></h1>
+    <table border="=1">
+        <tr>
+            <td></td>
+            <td style="background-color: aliceblue;">o</td>
+        </tr>
+    </table>
+    </center>
+    <script>
+        console.log("Welcome! to your smart door to unlock please enter a key..")
+        function password(){
+            var password="123@home";
+            var passwordtyped=prompt("Enter a password here..")
+            if (passwordtyped==password){
+                alert("Door Opened");
+                console.log("DOOR OPENED WELCOME TO YOUR SMART HOME")
+            }else if(passwordtyped!=password){
+                alert("Invalid password")
+                var passwordtyped=prompt("Enter a password here..")
+                if (passwordtyped!=password){
+                    alert("Invalid password")
+                    var passwordtyped=prompt("Enter a password here..")
+                    if (passwordtyped!=password){
+                        alert("System Blocked")
+                    }
+                }
+            }else{
+                console.log("Enter your password to unlock the door")
+            }
+        }
+        password();
+    </script>
+</body>
+</html>
