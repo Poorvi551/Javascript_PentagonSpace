@@ -1002,7 +1002,7 @@ BOM (Browser Object Model):-
 
 * Features of DOM:-
 
-  1.To modify HTML Elements.
+  1. To modify HTML Elements.
   2. To change styles.
   3. To add,delete & edit the elements.
   4. To handle events.
