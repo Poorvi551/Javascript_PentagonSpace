@@ -1055,7 +1055,239 @@ Inputs :
    3. document.getElementByTagName()
    4. document.querySelector()
    5. document.querySelectorAll()
-      
+
+ ### 1. document.getElementById() :-
+
+ * It is used to target the element based on the id and it returns a single element.
+ c
+
+   <body id="body">
+      <h1 id="head">Hello</h1>
+      <button onClick="change()">Click</button>
+     <script>
+      function change(){
+       let head = document.getElementById("head")
+       let body = document.getElementById("body")
+        head.innerText="Welcome"
+        head.style.color="powderblue"
+        head.style.backgroundColor="black"
+        body.style.margin="0px"
+        body.style.padding="0px"
+      }
+     </script>
+   </body>
+
+### 2. document.getElementByClassName() :-
+
+* It is used to target the multiple elements based on the class name and it returns html collections.
+* Ex:-
+
+   <body>
+     <h1 class="head">Dharan</h1>
+     <h1 class="head">Rossy</h1>
+     <h1 class="head">Reshma</h1>
+    <script>
+      let head = document.getElementByClassName("head")
+      head[1].innerText="Roshni"
+      head[2].stylecolor="pink"
+    </script>
+   </body>
+
+### 3. dcument.getElementByTagName() :-
+
+* It is used to target the multiple elements based on the tag name and it returns html collections.
+* Ex:-
+
+  <body>
+     <h1>HTML</h1>
+     <h1>CSS</h1>
+     <h1>Javascript</h1>
+    <script>
+      let head = document.getElementBytagName("h1")
+      head[2].innertext="React.js"
+    </script>
+  </body>
+
+### 4. document.querySelector() :-
+
+* querySelector method is used to target html elements CSS selectors and it returns a single element.
+* Ex :-
+
+  <body>
+    <h1></h1>
+   <script>
+     let head = document.querySelector("#head")
+     head.style.color="red"
+   </script>
+  </body>
+
+### 5. document.querySelectorAll() :-
+
+* It is used to target multiple elements using CSS selectors and it returns nodelist.
+* Ex :-
+
+  <body>
+    <h1 class="head">Hello</h1>
+    <h1 class="head">Welcome</h1>
+    <script>
+     let head = document.querySelectorAll("head")
+     head[1].innertext="Bye"
+    </script>
+  </body>
+
+## Event Handling :-
+
+* Event handling allows us to execute javascript code in response to user action.
+* Types of events:
+
+  1. Mouse events :
+         click,dbclick,moverover,mouseup,mousedown etc..
+     
+  2. Keyboard events :
+         keydown,keyup,keypress
+     
+  3. Form events :-
+         submit,focus,input etc..
+     
+  4. Window event :-
+         scroll,resize,load etc..
+
+ * There are two ways to handle events
+    1. Inline event handler
+    2. addEventListener()
+
+ 1. Inline event handler :-
+
+  <body>
+     <button onClick="a()".onClick="b()">click</button>
+     <script>
+      function a(){
+        console.log("This is task A");
+       }
+       function b(){
+         console.log("This is task B");
+       }
+     </script>
+  </body>
+
+* Drawbacks :
+
+* We cannot attach events having same event name.
+* It maxes both HTML and JS code.
+
+## Add Eventlistener :
+
+* It provides flexible way to handle events.
+* We can attach multiple events for a single element.
+
+### * Syntax :-
+
+   element_name.addEventListener("event",function)
+
+ <button id="btn">click</button>
+ <script>
+   let button = document.getElementById("btn")
+   button.addEventListener("click",()=>{
+    console.log("This is task B")
+   })
+ </script>
+
+ ### Keyboard Events :
+
+ * **Keydown :**
+
+<body>
+  <input type="text" id="user">
+  <script>
+    let input=document.getElementById("user")
+    input.addEventListener("keydown",(e)=>{
+      if (e.key=="a"){
+         console.log("Move left")
+       }else if(e.key=="s"){
+         console.log("Move right")
+       }else if(e.key=="w"){
+         console.log("Move up")
+       }else if(e.key=="d"){
+         console.log("Move down")
+       }else{
+         console.log("Invalid key")
+       }
+     }
+  </script>
+</body>
+
+* ***NOTE :- Keydown prints the value in console but not keyup. Keypress is depricated(older one).***
+
+### Form Events :-
+
+* By default form will reload the page.
+* It tries to connect to a server.
+* To stop this behaviour we prevent default method :-
+
+   <form action=" " id="handleForm">
+   <input type="text" id="user">
+   <button>click</button>
+   <script>
+     let form = document.getElementById("handleForm")
+     form.addEventListener("submit"(e)=>{
+        e.preventDefault()
+        let user = document.getElementById("user").value
+        console.log(user);
+      })
+   </script>
+
+## Event Bubbling :-
+
+ *  Event Bubbling is a default behaviour in DOM where an event starts from targeted element and bubbles through its parent element.
+ *  To stop the event buubling we make use of *stopPropagation()*.
+ *  Ex :-
+
+    <div id="parent" style="padding:20px ; background-color:lightblue;">
+     <button id="child">Click</button>
+    </div>
+    <script>
+      let parent = document.getElementById("parent")
+      let child = document.getElementById("child")
+      parent.addEventListener("click",()=>{
+        alert("Parent clicked...");
+      })
+      child.addEventListener("click",(e)=>{
+       e.stopPropagation()
+       alert("child clicked...")
+      })
+    </script>
+
+## Promises :-
+
+* Promises are used to handle asynchronous task like making API calls (fetching data from an API).
+* Ther are 3 states in promises
+   1. pending
+   2. fulfilled - then()----| ( similar as exception handling in python like try()
+   3. reject  - catch()-----|       catch() )
+
+* **API's :**
+   1. https://api.github.com/users
+   2. https://dummyjson.com/products
+
+* Ex:-
+
+  <script>
+    fetch("https://dummyjson.com/products")
+    .then(x=>x.json())
+    .then(y=>console.log(y))
+    .catch(err=>console.log("Something went wrong"));
+  </script>
+
+  ***NOTE : If console is used it will not show the value it will print response.***
+
+* **Synchronous:-**
+
+* Synchronous blocks the other task to get executed . It is a line by line execution.
+* Promises are used to execute asynchronous operations.
+
+* **Asynchronous:-**
+
+* Executes based on the events no line by line execution.
      
            
       
