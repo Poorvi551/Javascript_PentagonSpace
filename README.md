@@ -1,19 +1,19 @@
 # Javascript_PentagonSpace
 
-* History of Javscript :
+### * History of Javscript :
 
   * In 1995 javascript was developed by Brendan Eich.
   * He was working at Netscape Communication(Web Browser Company).
   * He named javascript firstly as MOCHA.
   * MOCHA -> livescript -> ECMA International(European Computer Manufacturer Association). -> ECMA script -> Javascript.
 
-* Javascript :-
+## * Javascript :-
 
   * Javascript is used to add functionality for the web pages.
   * Javascript is a light-weight object based programming or scripting language used by several websites for scripting the webpages.
   * Javascript is a client-side(frontend) language.      Python(server-side)
 
-* Features of Javascript:-
+### * Features of Javascript:-
 
   * Javascript is a interpreted language.
   * Javascript is dynamically typed language.
@@ -22,7 +22,7 @@
   * Supports - cross platform.
   * Event - driven Architecture.
 
-* Applications of Javascript:-
+#### * Applications of Javascript:-
 
   * Javascript can be used for wide range of applications.
     
@@ -33,23 +33,24 @@
     5. Desktop App development using electron.js(vs code).
     6. Machine Learning using tensorflow.js
 
-* Javascript Engine:-
+## * Javascript Engine:-
 
   * Javascript Engine is responsible for executing javascript code.
   * Each and every browser will have javascript engine with different names such as chrome - V8, Edge - Chakra, Firefox - SpiderMonkey, Safari - JS Core.
 
-  * Working of Javascript Engine:
+ ## Working of Javascript Engine:
 
-    * Parser takes the javascript code and it generates AST.
-    * AST - AST stands for Abstract Syntax Tree - It is a structured representation of a code.
-    * Interpreter converts this AST it into a byte code(Intermediate or Instruction).
-    * Compiler - Compiler takes byte code and converts it into a Machine code and produces output.
+   * Parser takes the javascript code and it generates AST.
+   * AST - AST stands for Abstract Syntax Tree - It is a structured representation of a code.
+   * Interpreter converts this AST it into a byte code(Intermediate or Instruction).
+   * Compiler - Compiler takes byte code and converts it into a Machine code and produces output.
 
-  * Javascript uses JIT(Just In Time) Compiler to optimize the process of code execution.
+  * *Javascript uses JIT(Just In Time) Compiler to optimize the process of code execution.*
 
-Ways of writing javascript code:
+### Ways of writing javascript code:
 
-  * NOTE : There are two ways of writing javascript code.
+  * ***NOTE : There are two ways of writing javascript code.***
+    
      * Types are:
 
         1. Internal method
@@ -99,12 +100,12 @@ Ways of writing javascript code:
                   console.log("Hello")
   __________________________________________________________________________________________________________________________
 
-* NOTE : Javascript code should always be written before closing the body tag(</body>) at the  end of the html file because first HTML Elements and CSS Elements should be rendered before executing the javascript code.
+* ***NOTE : Javascript code should always be written before closing the body tag(</body>) at the  end of the html file because first HTML Elements and CSS Elements should be rendered before executing the javascript code.***
 
-* NOTE : We can write the script tag anywhere but we have to use keywords called async or defer, this method will work only in external method of writing javascript code.
+* ***NOTE : We can write the script tag anywhere but we have to use keywords called async or defer, this method will work only in external method of writing javascript code.***
   
-  * ASYNC - Async will execute both HTML and Javascript code parallely.
-  * DEFER - Defer will execute first HTML code than executes the javascript code.
+  * **ASYNC** - Async will execute both HTML and Javascript code parallely.
+  * **DEFER** - Defer will execute first HTML code than executes the javascript code.
 
 
 * Output method :
@@ -120,7 +121,7 @@ Ways of writing javascript code:
 * Identifiers - Identifiers are the name given to the javascript program.
 * Literals - Literals are the values used in javascript program.
 
-Reserved Words:
+### Reserved Words:
 
 1. Abstract
 2. Boolean
@@ -182,14 +183,14 @@ Reserved Words:
 58. While
 59. With
 
-* Literals -
+## * Literals -
 
   They are of two types-
   
-    1. Primitive Datatype  - Immutable(Object- Dereferencing) -> number,string,boolean,null,undefined,bigInt
-    2. Non Primitive Datatype - Mutable(Object- Referencing) -> functions, arrays(filter,map,reduce), object(date,time,math)
+   1. Primitive Datatype  - Immutable(Object- Dereferencing) -> number,string,boolean,null,undefined,bigInt
+   2. Non Primitive Datatype - Mutable(Object- Referencing) -> functions, arrays(filter,map,reduce), object(date,time,math)
 
-Variable :-
+## Variable :-
 
   * Variable is a named memory location which is used to store some data or value and that can be changed n number of times during execution.
 
@@ -230,7 +231,7 @@ Variable :-
     * let - not possible
     * const - not possible
 
-* Hoisting :
+### * Hoisting :
 
 * Utilising the variable before the initialization line is called hoisting.
 
@@ -302,7 +303,7 @@ Inputs :
      
      * EX: source code : Assignment 3 folder in this repo.
 
-Literals :
+## Literals :
 
 1. Primitive :-
 
@@ -321,7 +322,7 @@ Literals :
             2. String Interpolation
                * Ex : source code - stringliterals.html
    
-       * NOTE - To print the the string with double quotes like("hello") we use '"hello"' - singel quotes, to print with single quotes like('hello') we use "'hello'" and to print with backticks like(`hi`) we can use either single quotes or double quotes("`hi`") or ('`hi`').
+       * ***NOTE - To print the the string with double quotes like("hello") we use '"hello"' - singel quotes, to print with single quotes like('hello') we use "'hello'" and to print with backticks like(`hi`) we can use either single quotes or double quotes("`hi`") or ('`hi`').***
                  
         * String Methods :
 
@@ -417,7 +418,7 @@ Literals :
      2. Arrays
      3. Object
         
-  1. Functions :
+ ## 1. Functions :
 
    * Function is a block of statement which is excuted whenever we call or invoke.
    * Function is a non primitive datatype.
@@ -577,7 +578,7 @@ Literals :
    
  * Return keyword terminates the function and comes out of the functions
 
-* Function Execution Context (FEC):
+## * Function Execution Context (FEC):
 
 * Whenever a new function is called inside a javascript engine it will create a new execution context called as FEC.
 * When a new FEC is created older GEC will go to garbage and the memory address of that GEC will be stored in a temporary memory called as closure.
@@ -600,11 +601,11 @@ Literals :
        }
        one()();
 
-* Lexical Scope :
+## * Lexical Scope :
 
 * The ability of javascript engine to search for a variable outer scope or global scope if the variable is not present in the local scope is called as lexical scope.
 
-Arrays:
+## Arrays:
 
  * Array is a collection of homogeneous and heterogeneous type of data.
  * Homogeneous stands for same type of data.
@@ -703,9 +704,9 @@ Arrays:
           names.splice(2,1,"Pandya");  //replace value
           names.splice(1,2);    // deletes value
 
- * Filter(), Map() and Reduce():-
+ ## * Filter(), Map() and Reduce():-
 
-  * Filter():
+  * **Filter():**
 
    *  Filter is a built in higher order function, it is used to remove unwanted elements from an array.
    *  Filter will return a new array.
@@ -718,7 +719,7 @@ Arrays:
           })
           console.log(result);   //40,50,60
 
- * Map():
+ * **Map():**
 
   * Map is a built-in higher order function it applies the given function to each and every element in an array[one-to-one mapping].
   * Transforms each element where we use arithmetic operators.
@@ -730,7 +731,7 @@ Arrays:
           })
           console.log(result);
     
- * Reduce():
+ * **Reduce():**
 
   * Reduce is a built in higher order function, it takes multiple elements and it reduces it into a single value.
   * Ex:
@@ -754,7 +755,7 @@ Arrays:
        console.log(dept);
        console.log(city);
 
- Objects:
+## Objects:
 
  * Object is a real world entity used to store dat in the form of key & value pair.
  * There are two types to declare an object.
@@ -791,10 +792,10 @@ Arrays:
          })
          console.log(user);
 
- * Accessing object properties :
+### * Accessing object properties :
 
-    1. Dot notation
-    2. Square brackets
+   1. Dot notation
+   2. Square brackets
 
    * Ex:
 
@@ -812,7 +813,7 @@ Arrays:
          console.log(user["name"];
          console.log(user["address"]["state"]);
      
-  * Modifying the objects:
+ ### * Modifying the objects:
 
    * Ex:
 
@@ -846,11 +847,11 @@ Arrays:
          console.log(Object.values(user));  //returns array of values
          console.log(Object.entries(user));  //returns both array of keys and values
 
-* Object Sealing and Freezing:
+### * Object Sealing and Freezing:
 
   * Both sealing and Freezing means protecting an object.
 
-* Sealing:
+* **Sealing:**
 
  * Whenever the object is sealed we cannot add, delete, but we can update.
  * Synatx:
@@ -874,7 +875,7 @@ Arrays:
          console.log(user);
          console.log(Object.isSealed(user))  // returns boolean values
 
-* Freezing :
+* **Freezing :**
 
   * Whenever an object is freezed we cannot modify the object(read-only)or immutable.
   * Ex:-
@@ -891,7 +892,7 @@ Arrays:
          console.log(user);
         console.log(Object.isFrozen(user)); // true
 
- * Object Destructuring:
+ ### * Object Destructuring:
 
    *  Object Destructuring means unpacking the values from an array and storing it in a separate variable.
    * Ex:
@@ -906,7 +907,7 @@ Arrays:
          console.log(Dept);
          console.log(Course);
 
- * Web Storage API:
+ ##  Web Storage API:
 
  * Each and every browser provides in built storage to store data upto 10Mb(text,number,letters,etc..)but not images and videos.
  * There are two types of storages :
@@ -914,7 +915,7 @@ Arrays:
     1. Local Storage(Permanent)
     2. Session Storage(Temporary) - if web page is closed memoray will be deleted.
 
- * Local Storage:
+ **1. Local Storage:**
 
   * To store data.
   * Syntax:
@@ -962,7 +963,7 @@ Arrays:
        localStorage.removeItem("email");
        localStorage.clear() // removes all the items
 
-2. Session Storage:
+**2. Session Storage:**
 
   * Ex:
 
@@ -975,7 +976,7 @@ Arrays:
         sessionStorage.removeItem("email");
         sessionStorage.clear() // removes all the items
 
- DOM (Document Object Model):-
+## DOM (Document Object Model):-
 
 * DOM is a programming interface provided by the browser that allows javascript to interact with HTML and CSS of a web page.
 * Ex:
@@ -989,9 +990,10 @@ Arrays:
       </script>
       </body>
 
-BOM (Browser Object Model):-
+## BOM (Browser Object Model):-
 
 * BOM allows javascript to interact with browser[outside the page content], like browser windows,location,history etc.
+  
 * BOM Objects:-
 
   1. Window (Global Object).
@@ -1008,8 +1010,51 @@ BOM (Browser Object Model):-
   4. To handle events.
 
 * Note: DOM is inside BOM.
-      
+
+## DOM Tree :
+
+* Whenever the browser loads on HTML elements, browser creates a tree like structure this structure is called *DOM Tree*.
+* Ex :-
+
+      <!DOCTYPE html>                                       
+      <html>
+        <head>
+          <meta>
+            <title></title>
+        </head>
+      <body>
+         <p>hello</p>
+         <h1>Welcome</h1>
+      </body>
+      </html>
+
+* Tree structure
    
+  document
+    |____html
+           |____head
+           |       |____meta
+           |       |____title
+           |             |___DOM
+           |
+           |
+           |__body
+                |____p
+                |    |____hello
+                |
+                |____h1
+                      |____Welcome
+
+ ##  Dom Selectors :
+
+ * DOM Selectors are methods provided by javascript to target elements.
+ * Types :-
+
+   1. document.getElementById()
+   2. document.getElementByClassName()
+   3. document.getElementByTagName()
+   4. document.querySelector()
+   5. document.querySelectorAll()
       
      
            
