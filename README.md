@@ -1045,7 +1045,7 @@ Inputs :
                 |____h1
                       |____Welcome
 
- ##  Dom Selectors :
+ ##  DOM Selectors :
 
  * DOM Selectors are methods provided by javascript to target elements.
  * Types :-
